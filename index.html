@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Career Guidance Assistant - a student career planning and industry insights web app." />
+  <title>Career Guidance Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#">
+        <span class="brand-icon">🎓</span>
+        <span>
+          <strong>Career Guidance Assistant</strong>
+          <small>Career planning & industry insights</small>
+        </span>
+      </a>
+      <span class="status">● AI Assistant Demo</span>
+    </div>
+  </header>
+
+  <main class="container page">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">AI & DATA SCIENCE INTERNSHIP</p>
+        <h1>Plan your career with a practical roadmap.</h1>
+        <p class="hero-text">
+          A responsive career guidance chatbot that helps students explore skills,
+          build a learning plan, prepare for interviews, and understand industry needs.
+        </p>
+      </div>
+      <div class="hero-card">
+        <span>30-Day Roadmap</span>
+        <strong>Foundation → Practice → Portfolio → Job Ready</strong>
+      </div>
+    </section>
+
+    <div class="dashboard">
+      <section class="card chat-card">
+        <div class="card-header">
+          <div>
+            <h2>💬 Career Chat</h2>
+            <p>Ask about skills, projects, interviews or career planning.</p>
+          </div>
+          <span class="online">Online</span>
+        </div>
+
+        <div id="chat" class="chat" aria-live="polite">
+          <div class="message bot">
+            <strong>Career Assistant</strong>
+            <p>Hi! 👋 Tell me your qualification, interest area, or target job and I’ll suggest a practical career plan.</p>
+          </div>
+          <div class="message bot">
+            <strong>Try this:</strong>
+            <p>“I’m learning CNC. What should I learn next?”</p>
+          </div>
+        </div>
+
+        <div class="quick-actions">
+          <button data-prompt="Suggest a career roadmap">Career roadmap</button>
+          <button data-prompt="What skills should I learn?">Skills</button>
+          <button data-prompt="Give me interview tips">Interview tips</button>
+          <button data-prompt="Show industry insights">Industry insights</button>
+        </div>
+
+        <form id="chat-form" class="chat-form">
+          <input id="chat-input" type="text" placeholder="Ask about your career..." autocomplete="off" />
+          <button type="submit">Send</button>
+        </form>
+      </section>
+
+      <aside class="sidebar">
+        <section class="card">
+          <div class="card-header compact">
+            <div>
+              <h2>🎯 Career Profile</h2>
+              <p>Set your current direction.</p>
+            </div>
+          </div>
+          <div class="form-grid">
+            <label>
+              Education / Qualification
+              <select id="education">
+                <option>ITI / Diploma</option>
+                <option>12th / Higher Secondary</option>
+                <option>Undergraduate</option>
+                <option>Graduate</option>
+              </select>
+            </label>
+            <label>
+              Interest Area
+              <select id="interest">
+                <option>CNC / Manufacturing</option>
+                <option>AI & Data Science</option>
+                <option>Web Development</option>
+                <option>Cybersecurity</option>
+                <option>Mechanical Engineering</option>
+              </select>
+            </label>
+            <label>
+              Goal
+              <select id="goal">
+                <option>Get a job</option>
+                <option>Build industry skills</option>
+                <option>Prepare for higher studies</option>
+                <option>Start freelancing</option>
+              </select>
+            </label>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="card-header compact">
+            <div>
+              <h2>📈 Skill Progress</h2>
+              <p>Example student dashboard.</p>
+            </div>
+          </div>
+          <div class="skill">
+            <div><span>Technical skills</span><b>70%</b></div>
+            <div class="progress"><span style="width:70%"></span></div>
+          </div>
+          <div class="skill">
+            <div><span>Communication</span><b>55%</b></div>
+            <div class="progress"><span style="width:55%"></span></div>
+          </div>
+          <div class="skill">
+            <div><span>Interview readiness</span><b>40%</b></div>
+            <div class="progress"><span style="width:40%"></span></div>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="card-header compact">
+            <div>
+              <h2>🗺️ 30-Day Roadmap</h2>
+              <p>A simple action plan.</p>
+            </div>
+          </div>
+          <ol class="roadmap">
+            <li><strong>Week 1 — Foundation</strong><span>Choose a target role and identify core skills.</span></li>
+            <li><strong>Week 2 — Practice</strong><span>Complete hands-on exercises and one mini project.</span></li>
+            <li><strong>Week 3 — Portfolio</strong><span>Document the project and improve your resume.</span></li>
+            <li><strong>Week 4 — Job Ready</strong><span>Practice interviews and apply to relevant roles.</span></li>
+          </ol>
+        </section>
+      </aside>
+    </div>
+
+    <section class="card features">
+      <div>
+        <span class="feature-icon">🧭</span>
+        <h3>Personalized Planning</h3>
+        <p>Students can choose education, interests and goals to structure their next steps.</p>
+      </div>
+      <div>
+        <span class="feature-icon">💡</span>
+        <h3>Practical Guidance</h3>
+        <p>Quick prompts provide actionable advice for skills, projects and interviews.</p>
+      </div>
+      <div>
+        <span class="feature-icon">📊</span>
+        <h3>Progress Tracking</h3>
+        <p>Visual progress indicators make learning goals easier to understand.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Career Guidance Assistant • Student Internship Project • HTML, CSS & JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
